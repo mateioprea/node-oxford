@@ -1,0 +1,27 @@
+{
+  "name": "node-oxford",
+  "version": "1.0.0",
+  "description": "Small library that incorporates Microsoft's project Oxford Emotion Recognition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateioprea/node-oxford.git"
+  },
+  "keywords": [
+    "oxford",
+    "emotion",
+    "api"
+  ],
+  "author": "Matei Oprea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mateioprea/node-oxford/issues"
+  },
+  "homepage": "https://github.com/mateioprea/node-oxford#readme",
+  "dependencies": {
+    "request": "^2.65.0"
+  }
+}
