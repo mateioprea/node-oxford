@@ -9,8 +9,10 @@ Small library that incorporates Microsoft's project Oxford Emotion Recognition
 
 ## Usage
 
+```javascript
   var oxford-emotion = require("node-oxford-emotion")(api-key)
   var emotion = oxford-emotion.recognize("url", image-url);
+```
 
 ## TODOS
   For now, local images are not supported. Will implement when Microsoft opens the endpoint.
