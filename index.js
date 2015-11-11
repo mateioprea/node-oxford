@@ -8,7 +8,7 @@ module.exports = function(key){
             var type = args[0],
                 image = args[1];
             var payload = {
-                image: image
+                url: image
             };
             request({
                 url: "https://api.projectoxford.ai/emotion/v1.0/recognize",
@@ -20,7 +20,7 @@ module.exports = function(key){
                     "Ocp-Apim-Subscription-Key" : key
                 }
             }, function (error, response, body){
-                console.log(response);
+                return response.body;
             });
         }
     }
