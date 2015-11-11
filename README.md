@@ -11,7 +11,9 @@ Small library that incorporates Microsoft's project Oxford Emotion Recognition
 
 ```javascript
   var oxford-emotion = require("node-oxford-emotion")(api-key)
-  var emotion = oxford-emotion.recognize("url", image-url);
+  var emotion = oxford-emotion.recognize("url", image-url, function(cb) {
+    console.log(cb);
+  });
 ```
 
 ## TODOS
@@ -24,3 +26,4 @@ Small library that incorporates Microsoft's project Oxford Emotion Recognition
 ## Release History
 
  * 1.0.0 Initial Release
+ * 1.0.1 Add callback

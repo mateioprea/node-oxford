@@ -6,7 +6,8 @@ module.exports = function(key){
         recognize: function () {
             var args = arguments;
             var type = args[0],
-                image = args[1];
+                image = args[1],
+                callback = args[2];
             var payload = {
                 url: image
             };
@@ -20,7 +21,7 @@ module.exports = function(key){
                     "Ocp-Apim-Subscription-Key" : key
                 }
             }, function (error, response, body){
-                return response.body;
+                callback(response.body);
             });
         }
     }
