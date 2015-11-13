@@ -1,6 +1,6 @@
 {
   "name": "node-oxford-emotion",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Small library that incorporates Microsoft's project Oxford Emotion Recognition",
   "main": "index.js",
   "scripts": {

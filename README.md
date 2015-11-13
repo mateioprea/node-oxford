@@ -12,14 +12,14 @@ Small library that incorporates Microsoft's project Oxford Emotion Recognition
    URL:
 
 ```javascript
-  var oxforEemotion = require("node-oxford-emotion")(api-key)
+  var oxfordEemotion = require("node-oxford-emotion")(api-key)
   var emotion = oxfordEmotion.recognize("url", image-url, function(cb) {
     console.log(cb);
   });
 ```
   Local Image:
   ```javascript
-    var oxforEemotion = require("node-oxford-emotion")(api-key)
+    var oxfordEemotion = require("node-oxford-emotion")(api-key)
     var emotion = oxfordEmotion.recognize("image", image-url, function(cb) {
       console.log(cb);
     });
