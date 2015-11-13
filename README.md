@@ -9,15 +9,32 @@ Small library that incorporates Microsoft's project Oxford Emotion Recognition
 
 ## Usage
 
+   URL:
+
 ```javascript
-  var oxford-emotion = require("node-oxford-emotion")(api-key)
-  var emotion = oxford-emotion.recognize("url", image-url, function(cb) {
+  var oxforEemotion = require("node-oxford-emotion")(api-key)
+  var emotion = oxfordEmotion.recognize("url", image-url, function(cb) {
     console.log(cb);
   });
 ```
+  Local Image:
+  ```javascript
+    var oxforEemotion = require("node-oxford-emotion")(api-key)
+    var emotion = oxfordEmotion.recognize("image", image-url, function(cb) {
+      console.log(cb);
+    });
+  ```
+
+  You need to read the file as binary data. You can use this function:
+  ```javascript
+  function binaryRead(file) {
+      var bitmap = fs.readFileSync(file);
+      return new Buffer(bitmap.toString('binary'),'binary');
+  }
+  ```
 
 ## TODOS
-  For now, local images are not supported. Will implement when Microsoft opens the endpoint.
+   Nothing.
 
 ## Project Oxford Documentation
 
@@ -27,3 +44,4 @@ Small library that incorporates Microsoft's project Oxford Emotion Recognition
 
  * 1.0.0 Initial Release
  * 1.0.1 Add callback
+ * 1.0.2 Add support for local images
