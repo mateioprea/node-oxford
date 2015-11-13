@@ -20,7 +20,7 @@ Small library that incorporates Microsoft's project Oxford Emotion Recognition
   Local Image:
   ```javascript
     var oxfordEemotion = require("node-oxford-emotion")(api-key)
-    var emotion = oxfordEmotion.recognize("image", image-url, function(cb) {
+    var emotion = oxfordEmotion.recognize("image", imageData, function(cb) {
       console.log(cb);
     });
   ```
@@ -32,6 +32,7 @@ Small library that incorporates Microsoft's project Oxford Emotion Recognition
       return new Buffer(bitmap.toString('binary'),'binary');
   }
   ```
+  You also need to parse the response using JSON.parse() if you input binary file.
 
 ## TODOS
    Nothing.
@@ -45,3 +46,4 @@ Small library that incorporates Microsoft's project Oxford Emotion Recognition
  * 1.0.0 Initial Release
  * 1.0.1 Add callback
  * 1.0.2 Add support for local images
+ * 1.0.4 Fix typo in README
